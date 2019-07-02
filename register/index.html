@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">        
+  <head>
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="col-xs-12 col-md-12">
+        <form class="form-signin" role="form" action="register.php?submit=true" method="post">
+          <h2 class="form-signin-heading">Please register here </h2>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Name"  name="name" autofocus style="border-color:#<?php   ?>;">
+          </div>
+          <div class="form-group <?php if (!empty($emailvalid)) { echo 'has-error'; } ?>">
+            <input type="text" class="form-control" placeholder="Email"  name="email" autofocus>
+            <span class="help-block"><?php echo $emailvalid; ?></span>
+          </div>
+          <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
