@@ -49,7 +49,7 @@ if($send){
  
     <div class="container">
       <div class="col-xs-12 col-md-8">
-        <form class="form-signin" role="form" action="" echo htmlspecialchars($_SERVER["PHP_SELF"]) method="post">
+        <form class="form-signin" role="form" action="" method="post">
           <h2 class="form-signin-heading">Please register here </h2>
 
 <div class="col-xs-10  col-sm-8 col-xs-offset-2">
