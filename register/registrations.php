@@ -1,8 +1,11 @@
+
 <?php
 if($_POST["submit"]) {
-    $imaginginpsychiatry@gmail.com($Text12390, $Text12392, $Dropdown12389, "From: $Text12392 <$Text12395>");
-    
-    
-#    mail("imaginginpsychiatry@gmail.com", "Form to email message", $_POST["message"], "From: imaginginpsychiatry@gmail.com");
+    $recipient = "imaginginpsychiatry@gmail.com"; //my email
+    $Text12392 = $_POST ["yourName"];
+    $Text12395 = $_POST["yourEmail"];
+
+    $mail($recipient, "From: $Text12392 <$Text12395>");
+    $thankYou="<p>Thank you! We will be in contact with you shortly.</p>";
 }
 ?>
