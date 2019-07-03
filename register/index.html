@@ -81,17 +81,11 @@
 
 <div class="form-group">
 <label class="control-label" for="occupation">
-	Occupation
+	Job title
         	<span style="font-size:1.2em; color:red; font-weight:bold;">*</span>
 </label>
 <div>
-<select name="occupation" class="form-control" id="occupation" required="required" data-parsley-error-message="This is required." style="width:70%;" data-parsley-id="3329">
-    <option value=""></option>
-            <option value="Student">Student</option>
-            <option value="PhD student">PhD student</option>
-            <option value="Post doc">Post doc</option>
-            <option value="Other">Other</option>
-</select><ul class="parsley-errors-list" id="parsley-id-3329"></ul>
+            <input class="form-control" type="text" name="occupation" id="occupation" size="30" maxlength="1000" value="" required="required" data-parsley-error-message="This is required." style="width:70%;" data-parsley-id="3699"><ul class="parsley-errors-list" id="parsley-id-3699"></ul>
 </div>
 </div>
 
@@ -121,10 +115,10 @@
   <p style="font-weight: 700;">Choose one of the options below: <span style="font-size:1.2em; color:red; font-weight:bold;">*</span></p>
   
     <div class="radio">
-      <label><input type="radio" name="optradio" checked="">I want to give a (short) presentation</label>
+      <label><input type="radio" name="optradio" checked="">I would like to give an oral presentation (please provide a title and abstract below)</label>
     </div>
     <div class="radio">
-      <label><input type="radio" name="optradio">I want to give a poster presentation (including an abstract)</label>
+      <label><input type="radio" name="optradio">I would like to give a poster presentation (please provide a title and abstract below)</label>
     </div>
     <div class="radio disabled">
       <label><input type="radio" name="optradio">None of the above</label>
@@ -137,7 +131,7 @@
     margin-bottom: 25px;
 ">
 <label class="control-label" for="dietary">
-	Dietary restrictions? (in case yes, please specify)		
+	Dietary restrictions for lunch (in case yes, please specify)		
 </label>
 <div>
             <input class="form-control" type="text" name="dietary" id="dietary" size="30" maxlength="1000" value="" style="width:70%;" data-parsley-id="3699"><ul class="parsley-errors-list" id="parsley-id-3699"></ul>
