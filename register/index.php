@@ -1,3 +1,45 @@
+<?php
+if(isset($_POST['fname']) && isset($_POST['lname']) && isset($_POST['occupation']) && isset($_POST['institute']) && isset($_POST['email']){
+$fname = $_POST['fname'];
+$lname = $_POST['lname'];
+$occupation = $_POST['occupation'];
+$institute = $_POST['institute'];
+$email = $_POST['email'];
+
+$to = 'imaginginpsychiatry@gmail.com';
+$subject = 'New registration';
+$body = '<html>
+		<body>
+			<h2>Registration</h2>
+			<hr>
+			<p>First name<br>'.$fname.'</p>
+			<p>Last name<br>'.$lname.'</p>
+			<p>Occupation<br>'.$occupation.'</p>
+			<p>Institute<br>'.$institute.'</p>
+			<p>Email<br>'.$email.'</p>
+		</body>
+	</html>';
+
+$headers = "From: <".$email.">;
+$headers .= "Reply-To: ".$email."\r\n";
+$headers .= "MIME-Version: 1.0\r\n";
+$headers .= "Content-type: text/html; charset-utf-8";
+
+$send = mail($to, $subject, $body, $headers);
+if($send){
+	echo '<br>';
+	echo 'Registration completed!'
+} else {
+	echo 'error';
+}
+}
+?>
+
+
+
+
+
+
 <html lang="en"><head>
     <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
   </head>
@@ -6,7 +48,7 @@
  
     <div class="container">
       <div class="col-xs-12 col-md-8">
-        <form class="form-signin" role="form" action="registrations.php" echo htmlspecialchars($_SERVER["PHP_SELF"]) method="post">
+        <form class="form-signin" role="form" action="" echo htmlspecialchars($_SERVER["PHP_SELF"]) method="post">
           <h2 class="form-signin-heading">Please register here </h2>
 
 <div class="col-xs-10  col-sm-8 col-xs-offset-2">
@@ -83,7 +125,7 @@
         	<span style="font-size:1.2em; color:red; font-weight:bold;">*</span>
 </label>
 <div>
-<select name="Dropdown12389" class="form-control" id="occupation" required="required" data-parsley-error-message="This is required." style="width:70%;" data-parsley-id="3329">
+<select name="occupation" class="form-control" id="occupation" required="required" data-parsley-error-message="This is required." style="width:70%;" data-parsley-id="3329">
     <option value=""></option>
             <option value="Student">Student</option>
             <option value="PhD student">PhD student</option>
