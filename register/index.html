@@ -1,43 +1,131 @@
-<!DOCTYPE html>
-<html lang="en">        
-  <head>
-    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+<html lang="en"><head>
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
   </head>
   <body>
     <div class="container">
       <div class="col-xs-12 col-md-12">
         <form class="form-signin" role="form" action="register.php?submit=true" method="post">
           <h2 class="form-signin-heading">Please register here </h2>
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Name"  name="name" autofocus style="border-color:#<?php   ?>;">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Occupation"  name="occupation" autofocus style="border-color:#<?php   ?>;">
-          </div>
-          
-          <div>
-            <select name="Dropdown12389" class="form-control" id="Dropdown12389" required="required" data-parsley-error-message="This is required." style="width: 100%;" data-parsley-id="3329">
-                <option value=""></option>
-                        <option value="Mr.">Mr.</option>
-                        <option value="Mrs.">Mrs.</option>
-                        <option value="Dr.">Dr.</option>
-                        <option value="Ms.">Ms.</option>
 
-            </select><ul class="parsley-errors-list" id="parsley-id-3329"></ul>
-            </div>
+<div class="col-xs-10  col-sm-8 col-xs-offset-2">
+
+<style>
+.radios input[type=radio] {
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+}
+
+.check-label {
+  max-width: 100%;
+  margin-bottom: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.checkbox {
+	margin-left:5px;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+	display:inline !important;
+}
+
+
+.form-group .parsley-errors-list {
+	font-weight:bold;
+	color:red;
+	margin-left:40px;
+}
+
+</style>
+	
+	
+	</div>
+
+
+<div style="margin-top: 35px;/* margin-left: 0px; */margin-bottom: 20px;">
+		<p>
+				Click here for the terms and conditions
+		</p>
+	</div>
+	
+	
+
+
+
+
+<div class="form-group">
+<label class="control-label" for="Text12390" style="
+    color: red;
+">
+	First Name 
+        	<span style="font-size:1.2em; color:red; font-weight:bold;">*</span>
+</label>
+<div>
+            <input class="form-control" type="text" name="Text12390" id="Text12390" size="30" maxlength="1000" value="" required="required" data-parsley-error-message="This is required." style="width:70%;" data-parsley-id="9749"><ul class="parsley-errors-list" id="parsley-id-9749"></ul>
+</div>
+</div>
+
+<div class="form-group">
+<label class="control-label" for="Text12392">
+	Last Name
+        	<span style="font-size:1.2em; color:red; font-weight:bold;">*</span>
+</label>
+<div>
+            <input class="form-control" type="text" name="Text12392" id="Text12392" size="30" maxlength="1000" value="" required="required" data-parsley-error-message="This is required." style="width:70%;" data-parsley-id="6958"><ul class="parsley-errors-list" id="parsley-id-6958"></ul>
+</div>
+</div> 
+
+<div class="form-group">
+<label class="control-label" for="Dropdown12389">
+	Occupation
+        	<span style="font-size:1.2em; color:red; font-weight:bold;">*</span>
+</label>
+<div>
+<select name="Dropdown12389" class="form-control" id="Dropdown12389" required="required" data-parsley-error-message="This is required." style="width:70%;" data-parsley-id="3329">
+    <option value=""></option>
+            <option value="Student">Student</option>
+            <option value="PhD student">PhD student</option>
+            <option value="Post doc">Post doc</option>
+            <option value="Other">Other</option>
+</select><ul class="parsley-errors-list" id="parsley-id-3329"></ul>
+</div>
+</div>
+
+<div class="form-group">
+<label class="control-label" for="Text12397">
+	Institute 
+</label>
+<div>
+            <input class="form-control" type="text" name="Text12397" id="Text12397" size="30" maxlength="1000" value="" style="width:70%;" data-parsley-id="3699"><ul class="parsley-errors-list" id="parsley-id-3699"></ul>
+</div>
+</div> 
+
+<div class="form-group">
+<label class="control-label" for="Text12395">
+	Email 
+        	<span style="font-size:1.2em; color:red; font-weight:bold;">*</span>
+</label>
+<div>
+            <input class="form-control" type="email" name="Text12395" id="Text12395" size="30" maxlength="1000" value="" required="required" data-parsley-error-message="This is required." style="width:70%;" data-parsley-id="3702"><ul class="parsley-errors-list" id="parsley-id-3702"></ul>
+</div>
+</div> 
+
+    <left>
+            <input type="submit" name="pageMainFormSubmit" id="pageMainFormSubmit" class="btn btn-primary" value="Submit" style="
+    width: 70%;
+">
+    </left>
+
           
           
+                    
           
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Institution"  name="institution" autofocus style="border-color:#<?php   ?>;">
-          </div>          
-          <div class="form-group <?php if (!empty($emailvalid)) { echo 'has-error'; } ?>">
-            <input type="text" class="form-control" placeholder="Email"  name="email" autofocus>
-            <span class="help-block"><?php echo $emailvalid; ?></span>
-          </div>
-          <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+          
         </form>
       </div>
     </div>
-  </body>
-</html>
+  
+
+</body></html>
