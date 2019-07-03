@@ -28,7 +28,7 @@ $headers .= "Content-type: text/html; charset-utf-8";
 $send = mail($to, $subject, $body, $headers);
 if ($send) {
 	echo '<br>';
-	echo 'Registration completed!'
+	echo 'Registration completed!';
 } else {
 	echo 'error';
 }
